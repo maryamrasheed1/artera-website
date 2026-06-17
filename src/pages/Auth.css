@@ -1,0 +1,231 @@
+.auth-page {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Left Panel */
+.auth-left {
+  width: 42%;
+  background-color: #2f4a3e;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.5rem 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-left::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: rgba(184, 75, 42, 0.15);
+  border-radius: 50%;
+  bottom: -100px;
+  right: -100px;
+}
+
+.auth-logo-img {
+  height: 150px; /* Adjust height to fit your design */
+  width: auto;
+  display: block;
+  margin-bottom: 20px; /* Adjust spacing as needed */
+  margin-left: -20px;
+}
+
+.auth-left-content {
+  margin-bottom: 3rem;
+}
+
+.auth-left-content h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #faf9f7;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+}
+
+.auth-left-content p {
+  color: rgba(250, 249, 247, 0.6);
+  font-size: 0.9rem;
+}
+
+/* Right Panel */
+.auth-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #faf9f7;
+  padding: 2rem;
+}
+
+.auth-box {
+  width: 100%;
+  max-width: 440px;
+}
+
+.auth-box h1 {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 0.4rem;
+}
+
+.auth-sub {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+/* Role Selector */
+.role-selector {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 1.8rem;
+}
+
+.role-btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 1rem;
+  border: 2px solid #e0d9d0;
+  border-radius: 14px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.role-btn svg {
+  font-size: 1.4rem;
+  color: #888;
+}
+
+.role-btn span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.role-btn small {
+  font-size: 0.75rem;
+  color: #999;
+}
+
+.role-active {
+  border-color: #b84b2a;
+  background-color: #fff5f2;
+}
+
+.role-active svg {
+  color: #b84b2a;
+}
+
+/* Form */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input {
+  padding: 0.7rem 1rem;
+  border: 1.5px solid #e0d9d0;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  background: #fff;
+  outline: none;
+  transition: border 0.2s;
+  color: #1a1a1a;
+}
+
+.form-group input:focus {
+  border-color: #b84b2a;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.83rem;
+  color: #555;
+}
+
+.checkbox-label a {
+  color: #b84b2a;
+  text-decoration: none;
+}
+
+.forgot-link {
+  font-size: 0.83rem;
+  color: #b84b2a;
+  text-decoration: none;
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 0.85rem;
+  background-color: #b84b2a;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+
+.auth-btn:hover {
+  background-color: #9e3d20;
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.auth-switch a {
+  color: #b84b2a;
+  font-weight: 600;
+  text-decoration: none;
+}
+.auth-error {
+  background: #fff0ee;
+  color: #b84b2a;
+  border: 1px solid #f5c6bb;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  font-size: 0.83rem;
+  font-weight: 500;
+}

@@ -1,0 +1,123 @@
+/* --- Page Layout --- */
+.profile-page { padding: 0 0 4rem 0; max-width: 900px; margin: auto; }
+
+.profile-header {
+  display: flex;
+  align-items: flex-end;
+  padding: 2rem 2rem 1rem 2rem;
+  gap: 2rem;
+}
+
+/* --- Avatar Enhancement --- */
+.avatar-container {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    background: #f0f0f0;
+    position: relative;
+    cursor: default; /* Default */
+}
+
+/* Visual cue for edit mode */
+.avatar-container:hover {
+    filter: brightness(90%);
+}
+
+/* If the parent is in edit mode, show pointer */
+.profile-header:has(.edit-toggle-btn) .avatar-container {
+    cursor: pointer; 
+}
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #c93b0f;
+    background: #eee;
+}
+
+/* --- Profile Info & Buttons --- */
+.profile-info { flex: 1; margin-bottom: 0.5rem; }
+
+.edit-toggle-btn {
+    background: transparent;
+    border: 2px solid #c93b0f;
+    color: #c93b0f;
+    padding: 0.5rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.2s;
+}
+
+.edit-toggle-btn:hover {
+    background: #c93b0f;
+    color: white;
+}
+
+/* --- Form Styles --- */
+.profile-form { 
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #e0e0e0;
+    padding: 2.5rem;
+    margin: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.form-group { display: flex; flex-direction: column; margin-bottom: 1.5rem; }
+
+.profile-form label { font-weight: 700; margin-bottom: 0.5rem; color: #333; }
+
+.profile-form input, .profile-form textarea { 
+    padding: 1rem;
+    border-radius: 12px;
+    border: 2px solid #eee;
+    transition: border-color 0.3s;
+    width: 100%;
+}
+
+.profile-form input:focus, .profile-form textarea:focus {
+    border-color: #c93b0f;
+    outline: none;
+}
+/* Update this in Profile.css */
+.btn-primary { 
+    background: #c93b0f;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    
+    /* Center the button */
+    display: block;
+    margin: 1.5rem auto 0 auto; 
+    width: auto; /* Changed from 100% to auto so it doesn't stretch */
+    min-width: 200px;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover:not(:disabled) { background: #a32f0c; }
+.btn-primary:disabled { opacity: 0.6; cursor: not-allowed; }

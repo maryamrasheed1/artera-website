@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'Agrandir';
+  src: url('../fonts/Agrandir-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 64px;
+  background-color: #faf9f7;
+  border-bottom: 1px solid #ede8e0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+text-decoration: none; 
+
+  color: inherit;
+}
+
+.logo-img {
+  height: 120px; /* Adjust as needed */
+  width: auto;
+  object-fit: contain;
+  margin-top: 20px;
+
+}
+
+.navbar-logo h2 {
+  font-family: 'Agrandir', sans-serif;
+  color: #221f1fea;
+  font-size: 25px;
+  font-weight: 800;
+  margin-left: 10px;
+  text-decoration: none;
+  
+  /* Add this line to congest the letters */
+  letter-spacing: -1px; 
+}
+.navbar-search {
+  display: flex;
+  align-items: center;
+  background-color: #f0ebe3;
+  border-radius: 24px;
+  padding: 0.5rem 1.2rem;
+  width: 40%;
+  gap: 0.6rem;
+}
+
+.navbar-search input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 0.9rem;
+  color: #1a1a1a;
+  width: 100%;
+}
+
+.search-icon {
+  color: #888;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #b84b2a;
+}
+
+.nav-link svg {
+  font-size: 1.2rem;
+}
+
+.nav-avatar {
+  background-color: #2f4a3e;
+  color: #fff;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-avatar:hover {
+  background-color: #b84b2a;
+  color: #fff;
+}

@@ -1,0 +1,108 @@
+/* Dashboard Layout & Container */
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  max-width: 1200px;
+ margin-left: 150px;
+  width: 100%;
+}
+
+/* Header Section */
+.orders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.orders-header h1 {
+  font-size: 1.75rem;
+  color: #333;
+}
+
+/* Filter Tabs */
+.filter-tabs {
+  background: #fff;
+  padding: 0.25rem;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+.filter-tabs button {
+  background: none;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: #888;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.filter-tabs button.active {
+  color: #c93b0f;
+  background: #fff2ed;
+}
+
+/* Table Card Styling */
+.dash-card {
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.orders-table th {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #666;
+  font-weight: 700;
+  padding: 1.2rem;
+  background: #fafafa;
+  border-bottom: 1px solid #eee;
+}
+
+.orders-table td {
+  padding: 1.2rem;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #f9f9f9;
+  color: #444;
+}
+
+.orders-table tbody tr:hover {
+  background-color: #fff9f7;
+}
+
+/* Status Pill Styling */
+.status-select {
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
+
+.status-completed { color: #2e7d32; background: #e8f5e9; border-color: #c8e6c9; }
+.status-pending { color: #f57c00; background: #fff3e0; border-color: #ffe0b2; }
+.status-in-escrow { color: #1976d2; background: #e3f2fd; border-color: #bbdefb; }
+
+.order-amount {
+  font-weight: 700;
+  font-family: 'monospace';
+}
